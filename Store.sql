@@ -1,5 +1,5 @@
 
--- Proyecto: An·lisis de Ventas - Superstore
+-- Proyecto: An√°lisis de Ventas - Superstore
 -- Herramienta: SQL Server (SSMS)
 -- Autor: Manuel Molina
 -- Fecha: 24 Abril del 2026
@@ -8,7 +8,7 @@
 
 
 /* 1. Top 5 productos por ingresos totales
- Objetivo: Identificar quÈ productos generan m·s ingresos*/
+ Objetivo: Identificar qu√© productos generan m√°s ingresos*/
 
 SELECT TOP 5
     Product_Name,
@@ -19,8 +19,8 @@ ORDER BY ingresos DESC;
 
 
 
-/* 2. Ganancia total por regiÛn
-Objetivo: Ver quÈ regiÛn del paÌs es m·s rentable*/
+/* 2. Ganancia total por regi√≥n
+Objetivo: Ver qu√© regi√≥n del pa√≠s es m√°s rentable*/
 
 SELECT
     Region,
@@ -31,9 +31,9 @@ ORDER BY total_ganancia DESC;
 
 
 
-/*3. Margen de ganancia por categorÌa de producto
-Objetivo: Identificar quÈ categorÌa es menos eficiente
- FÛrmula: (Profit / Sales) * 100*/
+/*3. Margen de ganancia por categor√≠a de producto
+Objetivo: Identificar qu√© categor√≠a es menos eficiente
+ F√≥rmula: (Profit / Sales) * 100*/
 
 SELECT
     Category,
@@ -44,8 +44,8 @@ ORDER BY margen_ganancia ASC;
 
 
 /*4. Ranking de clientes por total comprado
-Objetivo: Identificar los clientes m·s valiosos
-TÈcnica: CTE + Window Function RANK()*/
+Objetivo: Identificar los clientes m√°s valiosos
+T√©cnica: CTE + Window Function DENSE_RANK()*/
 
 WITH ventas_cliente AS (
     SELECT
