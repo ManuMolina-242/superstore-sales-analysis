@@ -47,7 +47,7 @@ El cliente más valioso (Sean Miller, SM-20320) acumuló $25,043 en compras tota
 
 | Archivo | Descripción |
 |---------|-------------|
-| `analisis_superstore.sql` | Queries del análisis con comentarios |
+| `store.sql` | Queries del análisis con comentarios |
 | `Superstore.csv` | Dataset original |
 
 ---
