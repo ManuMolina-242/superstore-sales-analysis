@@ -1,13 +1,13 @@
-# Análisis de Ventas - Superstore
+# Retail Sales Analysis & Dashboard — SQL Server + Power BI
 
-**Herramienta:** SQL Server (SSMS)  
+**Herramienta:** SQL Server (SSMS) + Power BI Desktop  
 **Autor:** Manuel Molina  
 **Fecha:** 24 de Abril del 2026
 
 ---
 
 ## Descripción
-Análisis exploratorio de un dataset de ventas retail con más de 9,900 transacciones. El objetivo fue responder preguntas clave de negocio sobre productos, regiones, categorías y clientes usando SQL.
+Análisis exploratorio de un dataset de ventas retail con más de 9,900 transacciones. El objetivo fue responder preguntas clave de negocio sobre productos, regiones, categorías y clientes usando SQL, y visualizar los hallazgos en un dashboard interactivo de Power BI.
 
 ---
 
@@ -43,12 +43,34 @@ El cliente más valioso (Sean Miller, SM-20320) acumuló $25,043 en compras tota
 
 ---
 
+## Power BI Dashboard
+Dashboard interactivo de 3 páginas construido sobre el mismo dataset.
+
+**Página 1 — Product Performance**
+- KPIs: Total Sales ($2.30M), Total Profit ($286K), Margen (12.47%)
+- Sales vs Profit por Category
+- Sales y Profit por Sub-Category
+- Hallazgo clave: Furniture lidera en ventas pero tiene el margen más bajo (2.49%). Tables y Bookcases generan profit negativo.
+
+**Página 2 — Regional Performance**
+- Sales, Profit y Margen % por Region
+- Hallazgo clave: West genera 2.7x más profit que Central a pesar de ventas similares.
+
+**Página 3 — Customer Analysis**
+- Top 10 clientes por Sales y por Profit
+- Hallazgo clave: Sean Miller es top 1 en ventas pero no aparece en top de profit. Tamara Chand y Raymond Buch lideran en ambas métricas.
+
+**Técnicas Power BI:** KPI Cards, Bar Charts, DAX measures (DIVIDE para margen %), Top N filters, tema Innovation.
+
+---
+
 ## Archivos
 
 | Archivo | Descripción |
 |---------|-------------|
 | `store.sql` | Queries del análisis con comentarios |
 | `Superstore.csv` | Dataset original |
+| `Superstore_Dashboard.pbix` | Dashboard Power BI interactivo |
 
 ---
 
@@ -60,4 +82,4 @@ El cliente más valioso (Sean Miller, SM-20320) acumuló $25,043 en compras tota
 ## Autor
 **Manuel Molina**  
 Statistics Student | Data Analytics Enthusiast  
-University of Costa Rica (UCR) · Instituto Tecnológico de Costa Rica (TEC)  
+University of Costa Rica (UCR) · Instituto Tecnológico de Costa Rica (TEC)
